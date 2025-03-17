@@ -1,0 +1,3190 @@
+BOX-1. WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      4			   * * * *
+				   * * * *
+				   * * * *
+				   * * * *
+	-------------------------------------
+	      2			     * *
+				     * *
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n;col++)
+  {
+   printf("*");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+BOX-2. WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      5			  1 1 1 1 1
+				  2 2 2 2 2
+				  3 3 3 3 3
+				  4 4 4 4 4
+				  5 5 5 5 5
+	-------------------------------------
+	      2			     1 1
+				     2 2
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n;col++)
+  {
+   printf("%d ", row);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+BOX-3. WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      5			  A A A A A
+				  B B B B B
+				  C C C C C
+				  D D D D D
+				  E E E E E
+	-------------------------------------
+	      2			     A A
+				     B B
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n;col++)
+  {
+   printf("%c ", row+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+BOX-4. WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      5			  A B C D E
+				  A B C D E
+				  A B C D E
+				  A B C D E
+				  A B C D E
+	-------------------------------------
+	      2			     A B
+				     A B
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n;col++)
+  {
+   printf("%c ", col+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+BOX-5(a). WAP that will print a pattern based on the input integer n. Please see the sample input output.
+       // Printing numbers in descending order.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			   1 2 3
+				   1 2 3
+				   1 2 3
+	-------------------------------------
+	      5			  1 2 3 4 5
+				  1 2 3 4 5
+				  1 2 3 4 5
+				  1 2 3 4 5
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n;col++)
+  {
+   printf("%d ", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+BOX-5(b). WAP that will print a pattern based on the input integer n. Please see the sample input output.
+       // Printing numbers in ascending order.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    3 2 1
+				    3 2 1
+				    3 2 1
+	-------------------------------------
+	      5			  5 4 3 2 1
+				  5 4 3 2 1
+  				  5 4 3 2 1
+				  5 4 3 2 1
+				  5 4 3 2 1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=n;col>=1;col--)
+  {
+   printf("%d ", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+BOX-6. WAP that will print a pattern based on the input integer n. Please see the sample input output.(Here underscore(_) indicates space.)
+       // Printing stars(*) at the odd positions.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			   *_*
+				   *_*
+				   *_*
+	-------------------------------------
+	      5			  *_*_*
+				  *_*_*
+				  *_*_*
+				  *_*_*
+				  *_*_*
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n;col++)
+  {
+   if(col%2 != 0)
+    printf("*");
+   else
+    printf("_");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+BOX-6(a). WAP that will print a pattern based on the input integer n. Please see the sample input output.(Here underscore(_) indicates space.)
+       // Printing odd numbers at the odd positions in descending order.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    1_3
+				    1_3
+				    1_3
+	-------------------------------------
+	      5			   1_3_5
+				   1_3_5
+  				   1_3_5
+				   1_3_5
+				   1_3_5
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n;col++)
+  {
+   if(col%2 != 0)
+    printf("%d", col);
+   else
+    printf("_");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+BOX-6(b). WAP that will print a pattern based on the input integer n. Please see the sample input output.
+       // Printing odd numbers at the odd positions in ascending order.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    3_1
+				    3_1
+				    3_1
+	-------------------------------------
+	      5			   5_3_1
+				   5_3_1
+  				   5_3_1
+				   5_3_1
+				   5_3_1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=n;col>=1;col--)
+  {
+   if(col%2 != 0)
+    printf("%d", col);
+   else
+    printf("_");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+BOX-7. WAP that will print a pattern based on the input integer n. Please see the sample input output.(Here underscore(_) indicates space.)
+       // Printing stars(*) at the even positions.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			   _*_
+				   _*_
+				   _*_
+	-------------------------------------
+	      5			  _*_*_
+				  _*_*_
+				  _*_*_
+				  _*_*_
+				  _*_*_
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n;col++)
+  {
+   if(col%2 == 0)
+    printf("*");
+   else
+    printf("_");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+BOX-7(a). WAP that will print a pattern based on the input integer n. Please see the sample input output.(Here underscore(_) indicates space.)
+       // Printing even numbers at the even positions in descending order.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    _2_ 
+				    _2_ 
+				    _2_ 
+	-------------------------------------
+	      5			    _2_4_
+				    _2_4_
+  				    _2_4_
+				    _2_4_
+				    _2_4_
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n;col++)
+  {
+   if(col%2 == 0)
+    printf("%d", col);
+   else
+    printf("_");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+BOX-7(b). WAP that will print a pattern based on the input integer n. Please see the sample input output.(Here underscore(_) indicates space.)
+       // Printing even numbers at the even positions in ascending order.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    _2_ 
+				    _2_ 
+				    _2_ 
+	-------------------------------------
+	      5			    _4_2_
+				    _4_2_
+  				    _4_2_
+				    _4_2_
+				    _4_2_
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=n;col>=1;col--)
+  {
+   if(col%2 == 0)
+    printf("%d",col);
+   else
+    printf("_");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+BOX-8. WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      5			   1 0 1 0 1
+				   0 1 0 1 0
+				   1 0 1 0 1
+				   0 1 0 1 0
+				   1 0 1 0 1
+	-------------------------------------
+	      3			     1 0 1
+				     0 1 0
+				     1 0 1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n;col++)
+  {
+   if(col%2 != 0)
+    printf("1 ");
+   else
+    printf("0 ");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+BOX-9. WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			   1 2 3
+				   2 3 4
+				   3 4 5
+	-------------------------------------
+	      4			  1 2 3 4
+				  2 3 4 5
+				  3 4 5 6
+				  4 5 6 7
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=row;col<n+row;col++)
+  {
+   printf("%d ", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Half Pyramid-1.1: WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			*
+				* *
+				* * *
+	-------------------------------------
+	      5			*
+				* *
+				* * *
+				* * * *
+				* * * * *
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=row;col++)
+  {
+   printf("* ");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-1.2(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			1
+				1 2
+				1 2 3
+	-------------------------------------
+	      4			1
+				1 2
+				1 2 3
+				1 2 3 4
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=row;col++)
+  {
+   printf("%d ", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-1.2(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			A
+				A B
+				A B C
+	-------------------------------------
+	      4			A
+				A B
+				A B C
+				A B C D
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=row;col++)
+  {
+   printf("%c ", col+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-1.3(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			1
+				2 1
+				3 2 1
+	-------------------------------------
+	      4			1
+				2 1
+				3 2 1
+				4 3 2 1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=row;col>=1;col--)
+  {
+   printf("%d ", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-1.3(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			A
+				B A
+				C B A
+	-------------------------------------
+	      4			A
+				B A
+				C B A
+				D C B A
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=row;col>=1;col--)
+  {
+   printf("%c ", col+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-1.4(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			1
+				2 2
+				3 3 3
+	-------------------------------------
+	      4			1
+				2 2
+				3 3 3
+				4 4 4 4
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=row;col++)
+  {
+   printf("%d ", row);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-1.4(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			A
+				B B
+				C C C
+	-------------------------------------
+	      4			A
+				B B
+				C C C
+				D D D D
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=row;col++)
+  {
+   printf("%c ", row+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-1.5(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			1
+				1 0
+				1 0 1
+	-------------------------------------
+	      4			1
+				1 0
+				1 0 1
+				1 0 1 0
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=row;col++)
+  {
+   if(col%2 != 0)
+    printf("1 ");
+   else
+    printf("0 ");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-1.5(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			1
+				0 0
+				1 1 1
+	-------------------------------------
+	      4			1
+				0 0
+				1 1 1
+				0 0 0 0
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=row;col++)
+  {
+   if(row%2 != 0)
+    printf("1 ");
+   else
+    printf("0 ");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-1.6: WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			1
+				2 4
+				3 6 9
+	-------------------------------------
+	      4			1
+				2 4
+				3 6 9
+				4 8 12 16
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=row;col++)
+  {
+   printf("%d ", row*col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-1.7(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+		  // Floyd's Triangle.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			1
+				2 3
+				4 5 6
+	-------------------------------------
+	      4			1
+				2 3
+				4 5 6
+				7 8 9 10
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col,count=0;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=row;col++)
+  {
+   printf("%d ", ++count);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-1.7(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			A
+				B C
+				D E F
+	-------------------------------------
+	      4			A
+				B C
+				D E F
+				G H I J
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col,count=0;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=row;col++)
+  {
+   printf("%c ", ++count+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-1.8: WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			1
+				2 3
+				3 4 5
+	-------------------------------------
+	      4			1
+				2 3
+				3 4 5
+				4 5 6 7
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=row;col<=row+row-1;col++)
+  {
+   printf("%d",col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-1.9: WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			3
+				3 2
+				3 2 1
+	-------------------------------------
+	      4			4
+				4 3
+				4 3 2
+				4 3 2 1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=n;col>=n-row+1;col--)
+  {
+   printf("%d",col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Half Pyramid-2.1: WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			* * * * *
+				* * * *
+				* * *
+				* *
+				*
+	-------------------------------------
+	     2			* *
+				*
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=row;col++)
+  {
+   printf("* ");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-2.2(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			1 2 3
+				1 2
+				1
+	-------------------------------------
+	     4			1 2 3 4
+				1 2 3
+				1 2
+				1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=row;col++)
+  {
+   printf("%d ", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-2.2(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			A B C
+				A B
+				A
+	-------------------------------------
+	     4			A B C D
+				A B C
+				A B
+				A
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=row;col++)
+  {
+   printf("%c ", col+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-2.3(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			3 2 1
+				2 1
+				1
+	-------------------------------------
+	     4			4 3 2 1
+				3 2 1
+				2 1
+				1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col,count=0;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=row;col>=1;col--)
+  {
+   printf("%d ", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-2.3(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			C B A
+				B A
+				A
+	-------------------------------------
+	     4			D C B A
+				C B A
+				B A
+				A
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col,count=0;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=row;col>=1;col--)
+  {
+   printf("%c ", col+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-2.4(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			3 3 3
+				2 2
+				1
+	-------------------------------------
+	     4			4 4 4 4
+				3 3 3
+				2 2
+				1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=row;col++)
+  {
+   printf("%d ", row);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-2.4(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			C C C
+				B B
+				A
+	-------------------------------------
+	     4			D D D D
+				C C C
+				B B
+				A
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=row;col++)
+  {
+   printf("%c ", row+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-2.5(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			1 0 1
+				1 0
+				1
+	-------------------------------------
+	     4			1 0 1 0
+				1 0 1
+				1 0
+				1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=row;col++)
+  {
+   if(col%2 != 0)
+    printf("1 ");
+   else
+    printf("0 ");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-2.5(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			1 1 1
+				0 0
+				1
+	-------------------------------------
+	     4			0 0 0 0
+				1 1 1
+				0 0
+				1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=row;col++)
+  {
+   if(row%2 != 0)
+    printf("1 ");
+   else
+    printf("0 ");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-2.6: WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			3 6 9
+				2 4
+				1
+	-------------------------------------
+	     4			4 8 12 16
+				3 6 9
+				2 4
+				1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=row;col++)
+  {
+   printf("%d ", row*col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-2.7(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			1 2 3
+				4 5
+				6
+	-------------------------------------
+	     4			1 2 3 4
+				5 6 7
+				8 9
+				10
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col,count=0;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=row;col++)
+  {
+   printf("%d ", ++count);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-2.7(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			A B C
+				D E
+				F
+	-------------------------------------
+	     4			A B C D
+				E F G
+				H I
+				J
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col,count=0;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=row;col++)
+  {
+   printf("%c ", ++count+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-2.8: WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			3 4 5
+				2 3
+				1
+	-------------------------------------
+	     4			4 5 6 7
+				3 4 5
+				2 3
+				1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=row;col<=row+row-1;col++)
+  {
+   printf("%d ", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-2.9: WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			3 2 1
+				3 2
+				3
+	-------------------------------------
+	     4			4 3 2 1
+				4 3 2
+				4 3
+				4
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=n;col>=n-row+1;col--)
+  {
+   printf("%d ", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Half Pyramid-3.1: WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			  *
+				 **
+				***
+	-------------------------------------
+	      5			    *
+				   **
+				  ***
+				 ****
+				*****
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   printf("*");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-3.2(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			   1
+				  12
+				 123
+	-------------------------------------
+	      4			   1
+				  12
+				 123
+				1234
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   printf("%d", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-3.2(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    A
+				  A B
+				A B C
+	-------------------------------------
+	      4			      A
+				    A B
+				  A B C
+				A B C D
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   printf("%c", col+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-3.3(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    1
+				  2 1
+				3 2 1
+	-------------------------------------
+	      4			      1
+				    2 1
+				  3 2 1
+				4 3 2 1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=row;col>=1;col--)
+  {
+   printf("%d", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-3.3(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    A
+				  B A
+				C B A
+	-------------------------------------
+	      4			      A
+				    B A
+				  C B A
+				D C B A
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=row;col>=1;col--)
+  {
+   printf("%c", col+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-3.4(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    1
+				  2 2
+				3 3 3
+	-------------------------------------
+	      4			      1
+				    2 2
+				  3 3 3
+				4 4 4 4
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   printf("%d", row);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+
+Half Pyramid-3.4(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    A
+				  B B
+				C C C 
+	------------------------------------- 
+	      4			      A
+				    B B
+				  C C C
+				D D D D
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   printf("%c", row+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-3.5(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    1
+				  1 0
+				1 0 1
+	-------------------------------------
+	      4			      1
+				    1 0
+				  1 0 1
+				1 0 1 0
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   if(col%2 != 0)
+    printf("1");
+   else
+    printf("0");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-3.5(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    1
+				  0 0
+				1 1 1
+	-------------------------------------
+	      4			      1
+				    0 0
+				  1 1 1
+				0 0 0 0
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   if(row%2 != 0)
+    printf("1");
+   else
+    printf("0");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-3.6: WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    1
+				  2 4
+				3 6 9
+	-------------------------------------
+	      4			        1
+				      2 4
+				    3 6 9
+				4 8 12 16
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   printf("%d", row*col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-3.7(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+		  // Floyd's Triangle.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    1
+				  2 3
+				4 5 6
+	-------------------------------------
+	      4			       1
+				     2 3
+				   4 5 6
+				7 8 9 10
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col,count=0;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   printf("%d", ++count);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-3.7(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    A
+				  B C
+				D E F
+	-------------------------------------
+	      4			      A
+				    B C
+				  D E F
+				G H I J
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col,count=0;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   printf("%c", ++count+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-3.8: WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    1
+				  2 3
+				3 4 5
+	-------------------------------------
+	      4			      1
+				    2 3
+				  3 4 5
+				4 5 6 7
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=row;col<=row+row-1;col++)
+  {
+   printf("%d", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-3.9: WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	      3			    3
+				  3 2
+				3 2 1
+	-------------------------------------
+	      4			      4
+				    4 3
+				  4 3 2
+				4 3 2 1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=n;col>=n-row+1;col--)
+  {
+   printf("%d", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Half Pyramid-4.1: WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			* * * * *
+				  * * * *
+				    * * *
+				      * *
+				        *
+	-------------------------------------
+	     2			* *
+				  *
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   printf("*");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-4.2(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			1 2 3
+				  1 2
+				    1
+	-------------------------------------
+	     4			1 2 3 4
+				  1 2 3
+				    1 2
+				      1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   printf("%d", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-4.2(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			A B C
+				  A B
+				    A
+	-------------------------------------
+	     4			A B C D
+				  A B C
+				    A B
+				      A
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   printf("%c", col+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-4.3(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			3 2 1
+				  2 1
+				    1
+	-------------------------------------
+	     4			4 3 2 1
+				  3 2 1
+				    2 1
+				      1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=row;col>=1;col--)
+  {
+   printf("%d", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-4.3(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			C B A
+				  B A
+				    A
+	-------------------------------------
+	     4			D C B A
+				  C B A
+				    B A
+				      A
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=row;col>=1;col--)
+  {
+   printf("%c", col+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-4.4(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			3 3 3
+				  2 2
+				    1
+	-------------------------------------
+	     4			4 4 4 4
+				  3 3 3
+				    2 2
+				      1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   printf("%d", row);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-4.4(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			C C C
+				  B B
+				    A
+	-------------------------------------
+	     4			D D D D
+				  C C C
+				    B B
+				      A
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   printf("%c", row+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-4.5(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			1 0 1
+				  1 0
+				    1
+	-------------------------------------
+	     4			1 0 1 0
+				  1 0 1
+				    1 0
+				      1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   if(col%2 != 0)
+    printf("1");
+   else
+    printf("0");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-4.5(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			1 1 1
+				  0 0
+				    1
+	-------------------------------------
+	     4			0 0 0 0
+				  1 1 1
+				    0 0
+				      1
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   if(row%2 != 0)
+    printf("1");
+   else
+    printf("0");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-4.6: WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			3 6 9
+				  2 4
+				    1
+	-------------------------------------
+	     4			4 8 12 16
+				   3 6 9
+				     2 4
+				       1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   printf("%d", row*col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-4.7(a): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			1 2 3
+				  4 5
+				    6
+	-------------------------------------
+	     4			1 2 3 4
+				  5 6 7
+				    8 9
+				      10
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col,count=0;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   printf("%d", ++count);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-4.7(b): WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			A B C
+				  D E
+				    F
+	-------------------------------------
+	     4			A B C D
+				  E F G
+				    H I
+				      J
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col,count=0;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=row;col++)
+  {
+   printf("%c", ++count+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-4.8: WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			3 4 5
+				  2 3
+				    1
+	-------------------------------------
+	     4			4 5 6 7
+				  3 4 5
+				    2 3
+				      1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=row;col<=row+row-1;col++)
+  {
+   printf("%d", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Half Pyramid-4.9: WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     3			3 2 1
+				  3 2
+				    3
+	-------------------------------------
+	     4			4 3 2 1
+				  4 3 2
+				    4 3
+				      4
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=n;col>=n-row+1;col--)
+  {
+   printf("%d", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Pyramid-1. WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			    *
+				   ***
+				  *****
+				 *******
+				*********
+	-------------------------------------
+	     3			    *
+				   ***
+				  *****
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("*");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Pyramid-2(a). WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			      1
+				     123
+				    12345
+				   1234567
+				  123456789
+	-------------------------------------
+	     3			      1
+				     123
+				    12345
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("%d", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Pyramid-2(b). WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			      A
+				     ABC
+				    ABCDE
+				   ABCDEFG
+				  ABCDEFGHI
+	-------------------------------------
+	     3			      A
+				     ABC
+				    ABCDE
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("%c", col+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Pyramid-3(a). WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			      1
+				     222
+				    33333
+				   4444444
+				  555555555
+	-------------------------------------
+	     3			      1
+				     222
+				    33333
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("%d", row);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Pyramid-3(b). WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			      A
+				     BBB
+				    CCCCC
+				   DDDDDDD
+				  EEEEEEEEE
+	-------------------------------------
+	     3			      A
+				     BBB
+				    CCCCC
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("%c", row+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Reverse Pyramid-1. WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			  *********
+			           *******
+  				    *****
+   				     ***
+    				      *
+	-------------------------------------
+	     3			    *****
+   				     ***
+    				      *
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("*");
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Reverse Pyramid-2(a). WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			  123456789
+				   1234567
+				    12345
+				     123
+				      1
+	-------------------------------------
+	     3			    12345
+				     123
+				      1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("%d", col);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Reverse Pyramid-2(b). WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			  ABCDEFGHI
+				   ABCDEFG
+				    ABCDE
+				     ABC
+				      A
+	-------------------------------------
+	     3			    ABCDE
+				     ABC
+				      A
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("%c", col+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Reverse Pyramid-3(a). WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			  555555555
+				   4444444
+				    33333
+				     222
+				      1
+	-------------------------------------
+	     3			    33333
+				     222
+				      1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("%d", row);
+  }
+  printf("\n");
+ }
+return 0;
+}
+
+Reverse Pyramid-3(b). WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			  EEEEEEEEE
+				   DDDDDDD
+				    CCCCC
+				     BBB
+				      A
+	-------------------------------------
+	     3			    CCCCC
+				     BBB
+				      A
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=n;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("%c", row+64);
+  }
+  printf("\n");
+ }
+return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Diamond-1. WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			      *
+				     ***
+				    *****
+				   *******
+				  *********
+				   *******
+				    *****
+ 				     ***
+   				      *
+	-------------------------------------
+	     3			      *
+				     ***
+				    *****
+				     ***
+				      *
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+
+ // Prints Pyramid
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("*");
+  }
+  printf("\n");
+ }
+
+ // Prints Reverse Pyramid
+ for(row=n-1;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("*");
+  }
+  printf("\n");
+ }
+
+return 0;
+}
+
+Diamond-2(a). WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			      1
+				     123
+				    12345
+				   1234567
+				  123456789
+				   1234567
+				    12345
+				     123
+				      1
+	-------------------------------------
+	     3			      1
+				     123
+				    12345
+ 				     123
+				      1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+
+ // Prints Pyramid
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("%d", col);
+  }
+  printf("\n");
+ }
+
+ // Prints Reverse Pyramid
+ for(row=n-1;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("%d", col);
+  }
+  printf("\n");
+ }
+
+return 0;
+}
+
+Diamond-2(b). WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			      A
+				     ABC
+				    ABCDE
+				   ABCDEFG
+				  ABCDEFGHI
+				   ABCDEFG
+				    ABCDE
+				     ABC
+				      A
+	-------------------------------------
+	     3			      A
+				     ABC
+				    ABCDE
+				     ABC
+				      A
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+
+ // Print Pyramid
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("%c", col+64);
+  }
+  printf("\n");
+ }
+
+ // Print Reverse Pyramid
+ for(row=n-1;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("%c", col+64);
+  }
+  printf("\n");
+ }
+
+return 0;
+}
+
+Diamond-3(a). WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			      1
+				     222
+				    33333
+				   4444444
+				  555555555
+				   4444444
+				    33333
+				     222
+				      1
+	-------------------------------------
+	     3			      1
+				     222
+				    33333
+				     222
+				      1
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+
+ // Print Pyramid
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("%d", row);
+  }
+  printf("\n");
+ }
+
+ // Print Reverse Pyramid
+ for(row=n-1;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("%d", row);
+  }
+  printf("\n");
+ }
+
+return 0;
+}
+
+Diamond-3(b). WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			      A
+				     BBB
+				    CCCCC
+				   DDDDDDD
+				  EEEEEEEEE
+				   DDDDDDD
+ 				    CCCCC
+				     BBB
+  				      A
+	-------------------------------------
+	     3			      A
+				     BBB
+				    CCCCC
+				     BBB
+				      A
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+
+ // Prints Pyramid
+ for(row=1;row<=n;row++)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("%c", row+64);
+  }
+  printf("\n");
+ }
+
+ // Prints Reverse Pyramid
+ for(row=n-1;row>=1;row--)
+ {
+  for(col=1;col<=n-row;col++)
+  {
+   printf(" ");
+  }
+  for(col=1;col<=2*row-1;col++)
+  {
+   printf("%c", row+64);
+  }
+  printf("\n");
+ }
+
+return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Mix-1. WAP that will print a pattern based on the input integer n. Please see the sample input output.(Here underscore(_) indicates space.)
+
+	Sample Input		Sample Output
+	------------		-------------
+	     4			  1_____1
+				  12___21
+				  123_321
+				  1234321
+	-------------------------------------
+	     3			   1___1
+				   12_21
+				   12321
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row=1; row<=n; row++)
+ {
+ // Prints first part of pattern
+  for(col=1; col<=row && col<n ; col++)
+  {
+   printf("%d", col);
+  }
+  // Prints spaces between two parts
+  for(col=row*2; col<n*2-1; col++)
+  {
+   printf(" ");
+  }
+  // Prints second part of the pattern
+  for(col=row; col>=1; col--)
+  {
+   printf("%d", col);
+  }
+
+  printf("\n");
+ }
+return 0;
+}
+
+Mix-2. WAP that will print a pattern based on the input integer n. Please see the sample input output.(Here underscore(_) indicates space.)
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			    *****
+				    *___*
+				    *****
+				    *___*
+				    *****
+	-------------------------------------
+	     3			     ***
+				     *_*
+				     ***
+
+#include <stdio.h>
+int main()
+{
+ int n, row, col;
+ printf("Enter a value for N:");
+ scanf("%d",&n);
+
+ for(row=1; row<=n; row++){
+    printf("*");
+ }
+ printf("\n");
+
+ for(row=1; row<=n/2; row++)
+ {
+  printf("*");
+
+   for(col=2; col<n; col++)
+    {
+     printf(" ");
+    }
+    printf("*\n");
+
+   for(col=1; col<=n; col++)
+    {
+     printf("*");
+    }
+
+  printf("\n");
+  }
+ return 0;
+}
+
+Mix-3. WAP that will print a pattern based on the input integer n. Please see the sample input output.(Here underscore(_) indicates space.)
+
+	Sample Input		Sample Output
+	------------		-------------
+	     9			  ____$____
+				  ___$$$___
+				  __$_$_$__
+				  _$__$__$_
+				  $$$$$$$$$
+				  _$__$__$_
+				  __$_$_$__
+				  ___$$$___
+				  ____$____
+	-------------------------------------
+	    13			______$______
+				_____$$$_____
+				____$_$_$____
+				___$__$__$___
+				__$___$___$__
+				_$____$____$_
+				$$$$$$$$$$$$$
+				_$____$____$_
+				__$___$___$__
+				___$__$__$___
+				____$_$_$____
+				_____$$$_____
+				______$______
+
+#include <stdio.h>
+int main()
+{
+int row, col, n;
+scanf("%d", &n);  // ‘n’ must be odd
+int num1 = n / 2 * 3;
+for(row = 0; row < n; row++)
+{
+for(col = 0; col < n; col++)
+{
+// center horizontal, center vertical, upper left diagonal, bottom left diagonal, upper right diagonal, bottom right diagonal
+if(row == n / 2 || col == n / 2 || row + col == n / 2 || row - col == n / 2 || col - row == n / 2 || row + col == num1)
+printf("$");
+else
+printf("_");
+}
+printf("\n");
+}
+return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Alphabet-1. WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			 H	 H
+				 H 	 H
+				 H H H H H
+				 H       H
+				 H	 H
+	-------------------------------------
+	     7			H 	    H
+				H 	    H
+				H           H
+				H H H H H H H
+				H           H
+				H           H
+				H 	    H
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row = 1; row<=n; row++)
+    {
+     for (col = 1; col <=n; col++)
+        {
+         if(col==1 || col==n || row==n/2+1)
+           printf("H");
+         else
+           printf(" ");
+        }
+
+        printf("\n");
+    }
+ return 0;
+}
+
+
+Alphabet-2. WAP that will print a pattern based on the input integer n. Please see the sample input output.(Here underscore(_) indicates space.)
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			    *___*
+				    _*_*_
+				    __*__
+				    _*_*_
+				    *___*
+	-------------------------------------
+	     7			   *_____*
+				   _*___*_
+				   __*_*__
+				   ___*___
+				   __*_*__
+				   _*___*_
+				   *_____*
+
+#include <stdio.h>
+int main()
+{
+ int n,row,col;
+ printf("Enter a value for N:");
+ scanf("%d", &n);
+ for(row = 1; row<=n; row++)
+    {
+     for (col = 1; col <=n; col++)
+        {
+         if(row==col || row+col==n+1)
+           printf("*");
+         else
+           printf("_");
+        }
+
+        printf("\n");
+    }
+ return 0;
+ }
+
+Alphabet-3. WAP that will print a pattern based on the input integer n. Please see the sample input output.
+
+	Sample Input		Sample Output
+	------------		-------------
+	     5			    ZZZZZ
+				       Z
+				      Z
+				     Z
+				    ZZZZZ
+	-------------------------------------
+	     7			    ZZZZZZZ
+					 Z
+				        Z
+				       Z
+				      Z
+				     Z
+				    ZZZZZZZ
+
+#include <stdio.h>
+int main()
+{
+ int n, row, col;
+ printf("Enter a value for N:");
+ scanf("%d",&n);
+ for(row=1; row<=n; row++)
+ {
+  for(col=n; col>=1; col--)
+  {
+   if(row==1 || row==n || row==col)
+      printf("Z");
+   else
+      printf(" ");
+  }
+   printf("\n");
+ }
+ return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
