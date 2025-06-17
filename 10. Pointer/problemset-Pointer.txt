@@ -1,0 +1,11 @@
+1. Write a C program that prints the content of a given array.
+   "Use pointer addition instead of array indexing."
+
+2.Write a C program that prints the content of a given array.
+  "Use pointer increment instead of array indexing."
+
+3. Write a C program that prints the content of a given array in reverse order.
+   "Use pointer subtraction instead of array indexing."
+
+4. Write a C program that prints the content of a given array in reverse order.
+   "Use pointer decrement instead of array indexing."
