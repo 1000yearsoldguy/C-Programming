@@ -1,5 +1,11 @@
 # C-Programming
 
+Hello World! 
+
+Welcome to your coding journey, new CS People! 
+
+Don't forget to keep your hunger for your new and exciting journey of coding. But, first, why not googling a bit about **Why you should learn C programming** while big sharks are already eating everything with Python or other fancy languages! 
+
 In this repository, I have attempted to cover various C programming problems and their solutions. Here, I've also provided the necessary books for learning this language, especially **E. Balagurusamy - Programming in ANSI C-McGraw Hill Education (India) (2016)**. Lastly, I also added some assignments so that after finishing all the problems, anyone can verify the learning by doing the assignment.
 
 A possible Learning flow can be:
